@@ -145,7 +145,11 @@ Authorization: Bearer $token
   "title": "New Task",
   "subtitle": "Task Subtitle",
   "description": "Task Description",
-  "due_date": "2025-01-31"
+  "due_date": "2025-01-31",
+  "status": "pending",
+  "created_at": "2025-01-01T12:00:00.000000Z",
+  "updated_at": "2025-01-01T13:00:00.000000Z",
+  "id": 1
 }
 ```
 
@@ -175,7 +179,11 @@ Authorization: Bearer $token
   "title": "Updated Task",
   "subtitle": "Updated Subtitle",
   "description": "Updated Description",
-  "due_date": "2025-02-01"
+  "due_date": "2025-02-01",
+  "status": "done",
+  "created_at": "2025-01-01T12:00:00.000000Z",
+  "updated_at": "2025-01-01T13:00:00.000000Z",
+  "id": 1
 }
 ```
 
@@ -203,7 +211,11 @@ Authorization: Bearer $token
   "title": "New Subtask",
   "subtitle": "Subtask Subtitle",
   "description": "Subtask Description",
-  "task_id": 1
+  "task_id": 1,
+  "status": "pending",
+  "created_at": "2025-01-01T12:00:00.000000Z",
+  "updated_at": "2025-01-01T13:00:00.000000Z",
+  "id": 1
 }
 ```
 
@@ -232,7 +244,11 @@ Authorization: Bearer $token
   "title": "Updated Subtask",
   "subtitle": "Updated Subtitle",
   "description": "Updated Description",
-  "task_id": 1
+  "task_id": 1,
+  "status": "removed",
+  "created_at": "2025-01-01T12:00:00.000000Z",
+  "updated_at": "2025-01-01T13:00:00.000000Z",
+  "id": 1
 }
 ```
 
