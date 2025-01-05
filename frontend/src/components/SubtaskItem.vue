@@ -57,7 +57,6 @@ export default {
             try {
                 const subtaskData = { subtask_id: subtask.id, status: "removed" };
                 const response = await this.subtaskService.updateSubtask(subtaskData);
-                console.log("Subtarefa removida:", response);
                 this.$emit('subtask-deleted', subtask.id);
             } catch (error) {
                 console.error("Erro ao remover subtarefa", error);

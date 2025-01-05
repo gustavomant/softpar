@@ -81,7 +81,6 @@ const toggleTaskStatus = async (task: Record<string, any>) => {
         const newStatus = task.status === "done" ? "pending" : "done";
         const taskData = { task_id: task.id, status: newStatus };
         const response = await taskService.updateTask(taskData);
-        console.log("Status da tarefa alterado:", response);
 
         loadTasks();
     } catch (error: any) {

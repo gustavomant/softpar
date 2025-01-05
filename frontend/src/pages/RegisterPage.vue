@@ -34,7 +34,7 @@
 
                 <q-card-actions>
                     <q-btn
-                        label="Sign Up"
+                        label="Registrar"
                         color="primary"
                         @click="handleSignUp"
                     />

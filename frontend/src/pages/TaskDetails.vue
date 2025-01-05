@@ -27,6 +27,7 @@
                         filled
                         :rules="[rules.required]"
                     />
+
                     
                     <div class="q-mt-md" style="display: flex; justify-content: flex-end;">
                         <q-btn label="Convidar Usuário" color="primary" type="submit" />
@@ -110,7 +111,7 @@ const newSubtask = ref<any>({
 });
 
 const userEmail = ref("");
-const accessType = ref("read");
+const accessType = ref({ label: "Leitura (read)", value: "read" });
 
 const loading = ref(true);
 
@@ -162,7 +163,7 @@ const updateTask = async () => {
             subtasks: task.value.subtasks,
         };
     
-        const response = await taskService.updateTask({task_id: props.taskId, updatedTaskData});
+        const response = await taskService.updateTask({task_id: props.taskId, ...updatedTaskData});
     } catch (error: any) {
         if (error?.response?.status === 403) {
             dialogMessage.value = "Você não tem permissão para atualizar os detalhes dessa tarefa.";
@@ -216,14 +217,14 @@ const inviteUser = async () => {
         const response = await userTaskAccessService.store({
             task_id: props.taskId,
             user_email: userEmail.value,
-            access_type: accessType.value,
+            access_type: accessType.value.value,
         });
 
         dialogMessage.value = "Usuário convidado com sucesso!";
         showDialog.value = true;
         
         userEmail.value = "";
-        accessType.value = "read";
+        accessType.value = { label: "Leitura (read)", value: "read" }
     } catch (error: any) {
         if (error?.response?.status === 403) {
             dialogMessage.value = "Você não tem permissão para convidar o usuário.";

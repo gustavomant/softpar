@@ -31,6 +31,12 @@
                         color="primary"
                         @click="handleSignIn"
                     />
+                    <!-- Botão para ir para a página de cadastro -->
+                    <q-btn
+                        label="Ir para Cadastro"
+                        color="secondary"
+                        @click="goToRegister"
+                    />
                 </q-card-actions>
             </q-card>
         </div>
@@ -70,6 +76,10 @@ const handleSignIn = async () => {
         console.error("Sign-in failed:", error);
         alert("Falha no login. Por favor, tente novamente.");
     }
+};
+
+const goToRegister = () => {
+    router.push("/register");
 };
 </script>
 

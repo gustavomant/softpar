@@ -19,6 +19,7 @@ class TaskService
             ->where("user_task_accesses.user_id", $userId)
             ->where("tasks.status", "!=", "removed")
             ->select("tasks.*")
+            ->distinct()
             ->get();
     }
 

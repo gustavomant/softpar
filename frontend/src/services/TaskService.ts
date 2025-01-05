@@ -12,7 +12,6 @@ class TaskService {
 
     async getTasks() {
         const response = await api.get("/task");
-        console.log(response);
         return response.data;
     }
 
@@ -23,12 +22,12 @@ class TaskService {
 
     async storeTask(taskData: Record<string, any>) {
         const response = await api.post("/task", taskData);
-        console.log(response);
         return response.data;
     }
 
     async updateTask(taskData: Record<string, any>) {
         const response = await api.put("/task", taskData);
+        console.log(response);
         return response.data;
     }
 }

@@ -19,6 +19,16 @@ class StoreTaskRequest extends FormRequest
      *
      * @return array<string, \Illuminate\Contracts\Validation\ValidationRule|array<mixed>|string>
      */
+    public function rules(): array
+    {
+        return [
+            "title" => "required|string",
+            "subtitle" => "required|string",
+            "description" => "required|string",
+            "due_date" => "required|date_format:Y-m-d", 
+        ];
+    }
+
     public function messages(): array
     {
         return [
