@@ -37,6 +37,3 @@ Página de autenticação para usuários registrados acessarem o sistema.
 
 ### **Registro** `/register`
 Página para novos usuários se registrarem no sistema.
-
----
-Este README fornece uma visão geral do funcionamento do frontend da aplicação Softpar. Caso precise de mais informações ou ajustes, entre em contato com a equipe de desenvolvimento.
