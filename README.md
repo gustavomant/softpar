@@ -40,5 +40,5 @@ Atenção: Pode demorar um pouco até todos os serviços iniciarem corretamente.
 
 
 
-Para mais detalhes, consulte os arquivos README individuais em cada módulo. Caso tenha dúvidas, entre em contato com a equipe de desenvolvimento.
+Para mais detalhes, consulte os arquivos README individuais em cada módulo.
 
