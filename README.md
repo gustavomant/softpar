@@ -32,8 +32,13 @@ Siga os passos abaixo para configurar e iniciar o projeto:
    ```bash
    docker-compose up --build -d
    ```
+Após a execução dos comandos acima, acesse o projeto no seu navegador através do localhost:9000.
+
+Atenção: Pode demorar um pouco até todos os serviços iniciarem corretamente. Durante o processo de inicialização, é possível que ocorra um erro de "cross-origin" (CORS), especialmente antes do serviço de rede estar totalmente funcional. Caso isso aconteça, aguarde alguns minutos e tente novamente. Eventualmente, o acesso será liberado.
 
 ---
+
+
 
 Para mais detalhes, consulte os arquivos README individuais em cada módulo. Caso tenha dúvidas, entre em contato com a equipe de desenvolvimento.
 
