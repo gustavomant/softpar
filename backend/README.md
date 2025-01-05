@@ -6,8 +6,8 @@
 
 ## Rotas da Aplicação
 
-### POST /signin
-**Login**
+### POST /signup
+**Registro de usuário**
 Retorna um `access_token`.
 
 #### Payload:
@@ -34,8 +34,8 @@ Retorna um `access_token`.
 }
 ```
 
-### POST /signup
-**Registro de usuário**
+### POST /signin
+**Login**
 Retorna um `access_token`.
 
 #### Payload:
