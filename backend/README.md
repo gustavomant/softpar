@@ -41,7 +41,7 @@ Retorna um `access_token`.
 #### Payload:
 ```json
 {
-  "name": "Jane Doe",
+  "email": "janedoe@example.com",
   "password": "securepassword"
 }
 ```
