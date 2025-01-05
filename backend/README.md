@@ -116,7 +116,8 @@ Authorization: Bearer $token
   "due_date": "2025-12-31",
   "created_by_user_id": 1,
   "created_at": "2025-01-01T12:00:00.000000Z",
-  "updated_at": "2025-01-01T13:00:00.000000Z"
+  "updated_at": "2025-01-01T13:00:00.000000Z",
+  "subtasks": []
 }
 ```
 
